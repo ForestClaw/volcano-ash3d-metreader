@@ -463,8 +463,8 @@
 
       ! Some geometry terms
 #ifdef USEPOINTERS
-      real(kind=sp),dimension(:,:)     ,pointer            :: rdphi_MetP_sp    => null()
-      real(kind=sp),dimension(:,:,:)   ,pointer            :: rdlambda_MetP_sp => null()
+      real(kind=sp),dimension(:,:)     ,pointer    ,public :: rdphi_MetP_sp    => null()
+      real(kind=sp),dimension(:,:,:)   ,pointer    ,public :: rdlambda_MetP_sp => null()
       real(kind=sp),dimension(:)       ,pointer    ,public :: MR_dx_met        => null()
       real(kind=sp),dimension(:)       ,pointer    ,public :: MR_dx_submet     => null()
       real(kind=sp),dimension(:)       ,pointer    ,public :: MR_dy_met        => null()
